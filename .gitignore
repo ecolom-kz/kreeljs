@@ -1,5 +1,7 @@
 .idea
 .npmrc
+.vscode
+*.tgz
 npm-debug.log
 node_modules
 dist

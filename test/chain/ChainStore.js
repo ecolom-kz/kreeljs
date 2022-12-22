@@ -1,5 +1,5 @@
 import assert, { doesNotMatch } from "assert";
-import {Apis, ChainConfig} from "bitsharesjs-ws";
+import {Apis, ChainConfig} from "leedexjs-ws";
 import {ChainStore} from "../../lib";
 // var objs = require("./testObjects.json");
 
@@ -9,7 +9,7 @@ describe("ChainStore", () => {
     // Connect once for all tests
     before(function() {
         return Apis.instance(
-            "wss://eu.nodes.bitshares.ws",
+            "wss://node0.leedex.net",
             true
         ).init_promise.then(function(result) {
             coreAsset = result[0].network.core_asset;
@@ -192,7 +192,7 @@ describe("ChainStore", () => {
 //     before(function() {
 //         return new Promise(function(resolve) {
 //             return Apis.instance(
-//                 "wss://eu.nodes.bitshares.ws",
+//                 "wss://node0.leedex.net:8980",
 //                 true
 //             ).init_promise.then(function(result) {
 //                 coreAsset = result[0].network.core_asset;

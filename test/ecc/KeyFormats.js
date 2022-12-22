@@ -1,6 +1,6 @@
 import { Aes, PrivateKey, PublicKey, Address } from "../../lib";
 import assert from "assert";
-import {ChainConfig} from "bitsharesjs-ws";
+import {ChainConfig} from "leedexjs-ws";
 
 var test = function(key) {
     describe("KeyFormats", function() {
@@ -26,7 +26,7 @@ var test = function(key) {
                 assert.equal(key.blockchain_address, public_key.toBlockchainAddress().toString('hex'));
             });
 
-            it("BTS public key import / export", function() {
+            it("LD public key import / export", function() {
                 var public_key = PublicKey.fromPublicKeyString(key.public_key);
                 assert.equal(key.public_key, public_key.toPublicKeyString());
             });

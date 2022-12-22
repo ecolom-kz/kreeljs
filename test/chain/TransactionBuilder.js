@@ -1,12 +1,12 @@
 import assert from "assert";
-import {Apis} from "bitsharesjs-ws";
+import {Apis} from "leedexjs-ws";
 import {TransactionBuilder, ops, hash} from "../../lib";
 
 describe("TransactionBuilder", () => {
     // Connect once for all tests
     before(function() {
         return new Promise(function(resolve, reject) {
-            Apis.instance("wss://eu.nodes.bitshares.ws", true)
+            Apis.instance("wss://node0.leedex.net:8980", true)
                 .init_promise.then(resolve)
                 .catch(reject);
         });

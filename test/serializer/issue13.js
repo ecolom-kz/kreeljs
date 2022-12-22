@@ -6,8 +6,8 @@ import {
     ops,
     types
 } from "../../lib";
-// import { Apis } from 'bitsharesjs-ws';
-import {Apis, ChainConfig} from "bitsharesjs-ws";
+// import { Apis } from 'leedexjs-ws';
+import {Apis, ChainConfig} from "leedexjs-ws";
 import assert from "assert";
 
 describe("issue13", function() {
@@ -68,7 +68,7 @@ describe("issue13", function() {
             signatures: []
         };
         return Apis.instance(
-            "wss://eu.nodes.bitshares.ws",
+            "wss://node0.leedex.net:8980",
             true
         ).init_promise.then(() => {
             var b = ops.transaction.toBuffer(a);

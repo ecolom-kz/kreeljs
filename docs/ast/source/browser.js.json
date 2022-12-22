@@ -737,10 +737,10 @@
                         }
                       },
                       "extra": {
-                        "rawValue": "bitsharesjs-ws",
-                        "raw": "\"bitsharesjs-ws\""
+                        "rawValue": "leedexjs-ws",
+                        "raw": "\"leedexjs-ws\""
                       },
-                      "value": "bitsharesjs-ws"
+                      "value": "leedexjs-ws"
                     }
                   ]
                 }
@@ -2086,7 +2086,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "bitsharesjs-ws",
+      "value": "leedexjs-ws",
       "start": 343,
       "end": 359,
       "loc": {

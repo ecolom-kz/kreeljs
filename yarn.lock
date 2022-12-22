@@ -1538,14 +1538,6 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-bitsharesjs-ws@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/bitsharesjs-ws/-/bitsharesjs-ws-6.0.0.tgz#88f5f2014b355ea20ddfdcee6494a8db0596ad15"
-  integrity sha512-hIsFcGggV6jkgCKrVE7Pmm8AgJMbBc2pthOx1/9he436gfehtbMvjn7J5G3rWhPu0VONROI//LAX/qhhhIieaA==
-  dependencies:
-    isomorphic-ws "^4.0.1"
-    ws "^8.4.0"
-
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.11.9:
   version "4.12.0"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.12.0.tgz#775b3f278efbb9718eec7361f483fb36fbbfea88"
@@ -3046,6 +3038,14 @@ labeled-stream-splicer@^2.0.0:
   dependencies:
     inherits "^2.0.1"
     stream-splicer "^2.0.0"
+
+leedexjs-ws@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/leedexjs-ws/-/leedexjs-ws-6.2.0.tgz#030ed9ca47e1e7cfd7f972ae3a8eea72ee76c17d"
+  integrity sha512-wkBRDG1AMgvyrbFa2ELC164SQNxEGqxi5cys+sMC+8a22bgeMehnlBjpKNf3ZUa7o6nrEcH8LLsoR4EWOfoy3A==
+  dependencies:
+    isomorphic-ws "^4.0.1"
+    ws "^8.4.0"
 
 loader-runner@^4.2.0:
   version "4.2.0"

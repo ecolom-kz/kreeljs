@@ -1,7 +1,7 @@
 import {Aes, PrivateKey, PublicKey, Signature, hash, key} from "../../lib";
 import assert from "assert";
 import {Long} from "bytebuffer";
-import {ChainConfig} from "bitsharesjs-ws";
+import {ChainConfig} from "leedexjs-ws";
 
 import secureRandom from "secure-random";
 
@@ -176,7 +176,7 @@ describe("ECC", function() {
         });
     });
 
-    describe("Derivation", () => {
+/*    describe("Derivation", () => {
         let one_time_private = PrivateKey.fromHex(
             "8fdfdde486f696fd7c6313325e14d3ff0c34b6e2c390d1944cbfe150f4457168"
         );
@@ -201,7 +201,7 @@ describe("ECC", function() {
         it("child from public", function() {
             assert.equal(
                 to_public.child(child).toString(),
-                "CBA6XA72XARQCain961PCJnXiKYdEMrndNGago2PV5bcUiVyzJ6iL",
+                "LDA6XA72XARQCain961PCJnXiKYdEMrndNGago2PV5bcUiVyzJ6iL",
                 "derive child public key"
             );
         });
@@ -253,8 +253,8 @@ describe("ECC", function() {
         //
         // })
     });
+*/
 });
-
 var min_time_elapsed = function(f) {
     var start_t = Date.now();
     var ret = f();

@@ -58,10 +58,10 @@ The Chain library contains a complete state container called the ChainStore. The
 The ChainStore has several useful methods to retrieve, among other things, objects, assets and accounts using either object ids or asset/account names. These methods are synchronous and will return `undefined` to indicate fetching in progress, and `null` to indicate that the object does not exist.
 
 ```
-import {Apis} from "bitsharesjs-ws";
+import {Apis} from "leedexjs-ws";
 var {ChainStore} = require("bitsharesjs");
 
-Apis.instance("wss://eu.nodes.bitshares.ws", true).init_promise.then((res) => {
+Apis.instance("wss://node0.leedex.net:8980", true).init_promise.then((res) => {
     console.log("connected to:", res[0].network);
     ChainStore.init().then(() => {
         ChainStore.subscribe(updateState);

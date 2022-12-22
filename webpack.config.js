@@ -5,7 +5,7 @@ module.exports = {
     mode: "production",
     output: {
         path: path.resolve(__dirname, "build"),
-        filename: "bitsharesjs.cjs",
+        filename: "leedexjs.cjs",
         libraryTarget: "commonjs"
     },
     resolve:{
