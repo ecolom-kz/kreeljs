@@ -1,18 +1,18 @@
-# BitsharesJS (bitsharesjs)
+# LEEDEXJS
 
-Pure JavaScript Bitshares library for node.js and browsers. Can be used to construct, sign and broadcast transactions in JavaScript, and to easily obtain data from the blockchain via public apis.
+Pure JavaScript LEEDEX library for node.js and browsers. Can be used to construct, sign and broadcast transactions in JavaScript, and to easily obtain data from the blockchain via public apis.
 
 Most of this code was written by [jcalfee](https://github.com/jcalfee), my work was mostly just repackaging to a discrete npm package.
 
-[![npm version](https://img.shields.io/npm/v/bitsharesjs.svg?style=flat-square)](https://www.npmjs.com/package/bitsharesjs)
-[![npm downloads](https://img.shields.io/npm/dm/bitsharesjs.svg?style=flat-square)](https://www.npmjs.com/package/bitsharesjs)
+[![npm version](https://img.shields.io/npm/v/leedexjs.svg?style=flat-square)](https://www.npmjs.com/package/leedexjs)
+[![npm downloads](https://img.shields.io/npm/dm/leedexjs.svg?style=flat-square)](https://www.npmjs.com/package/leedexjs)
 
 ## Setup
 
 This library can be obtained through npm:
 
 ```
-npm install bitsharesjs
+npm install leedexjs
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ The auths object should contain the auth arrays from the account object. An exam
 ```
 {
     active: [
-        ["GPH5Abm5dCdy3hJ1C5ckXkqUH2Me7dXqi9Y7yjn9ACaiSJ9h8r8mL", 1]
+        ["LD5Abm5dCdy3hJ1C5ckXkqUH2Me7dXqi9Y7yjn9ACaiSJ9h8r8mL", 1]
     ]
 }
 ```
@@ -59,7 +59,7 @@ The ChainStore has several useful methods to retrieve, among other things, objec
 
 ```
 import {Apis} from "leedexjs-ws";
-var {ChainStore} = require("bitsharesjs");
+var {ChainStore} = require("leedexjs");
 
 Apis.instance("wss://node0.leedex.net:8980", true).init_promise.then((res) => {
     console.log("connected to:", res[0].network);
@@ -84,7 +84,7 @@ The ECC library contains all the crypto functions for private and public keys as
 As a quick example, here's how to generate a new private key from a seed (a brainkey for example):
 
 ```
-var {PrivateKey, key} = require("bitsharesjs");
+var {PrivateKey, key} = require("leedexjs");
 
 let seed = "THIS IS A TERRIBLE BRAINKEY SEED WORD SEQUENCE";
 let pkey = PrivateKey.fromSeed( key.normalize_brainKey(seed) );
@@ -107,10 +107,10 @@ open out/esdoc/index.html
 
 ## Binaries / Browserified bundles
 
-Please have a [look here](https://github.com/bitshares/bitsharesjs/releases) to find your desired release.
+Please have a [look here](https://github.com/leedex-chain/leedexjs/releases) to find your desired release.
 If you want to build the binaries yourself you can clone this repository and run `npm install`. It will
 create
 
--   Browserified version `build/bitsharesjs.js`
--   Browserified and minified (babel) version `build/bitsharesjs.min.js`
--   CommonJS version using webpack `build/bitsharesjs.cjs`
+-   Browserified version `build/leedexjs.js`
+-   Browserified and minified (babel) version `build/leedexjs.min.js`
+-   CommonJS version using webpack `build/leedexjs.cjs`
