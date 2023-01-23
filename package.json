@@ -1,6 +1,6 @@
 {
     "name": "leedexjs",
-    "version": "6.1.1",
+    "version": "6.1.2",
     "description": "Pure JavaScript LEEDEX library for node.js and browsers.",
     "browser": {
         "ws": false,
