@@ -1,0 +1,29 @@
+name: Build and publish Package to npmjs
+on:
+  push:
+    tags: [ v* ]
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Setup .npmrc file to publish to npm
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '17.x'
+          registry-url: 'https://registry.npmjs.org'
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@octocat'
+
+      - name: setup
+        run: yarn
+
+      - name: publish
+        run: yarn publish
+        if: contains(github.ref, 'refs/tags/v')
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
