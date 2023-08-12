@@ -1,7 +1,7 @@
 {
-    "name": "leedexjs",
-    "version": "6.1.2",
-    "description": "Pure JavaScript LEEDEX library for node.js and browsers.",
+    "name": "kreeljs",
+    "version": "0.0.1",
+    "description": "Pure JavaScript KREEL library for node.js and browsers.",
     "browser": {
         "ws": false,
         "crypto": false
@@ -20,8 +20,8 @@
         "build-es": "cross-env BABEL_ENV=es babel lib -d es",
         "postbuild": "yarn run browserify && yarn run build-es && yarn run webpack",
         "build:watch": "babel lib -d dist --watch",
-        "browserify": "cross-env NODE_ENV=production browserify --full-paths false dist/browser.js --standalone leedex_js -o build/leedexjs.js -d",
-        "postbrowserify": "cross-env NODE_ENV=production minify build/leedexjs.js --mangle --outFile build/leedexjs.min.js",
+        "browserify": "cross-env NODE_ENV=production browserify --full-paths false dist/browser.js --standalone kreel_js -o build/kreeljs.js -d",
+        "postbrowserify": "cross-env NODE_ENV=production minify build/kreeljs.js --mangle --outFile build/kreeljs.min.js",
         "precommit": "pretty-quick --staged && yarn run test",
         "doc": "esdoc -c esdoc.json",
         "example:asset": "babel-node examples/updateAsset",
@@ -38,7 +38,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/leedex-chain/leedexjs.git"
+        "url": "git+https://github.com/kreel-chain/kreeljs.git"
     },
     "author": "maxirmx <maxirmx@gmail.com>",
     "contributors": [
@@ -46,7 +46,7 @@
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/leedex-chain/leedexjs/issues"
+        "url": "https://github.com/kreel-chain/kreeljs/issues"
     },
     "engines": {
         "node": ">= 16.13.0"
@@ -64,7 +64,7 @@
         "ecurve": "^1.0.6",
         "event-emitter": "^0.3.5",
         "immutable": "^4.0.0",
-        "leedexjs-ws": "^6.2.0",
+        "kreeljs-ws": "^0.0.1",
         "safe-buffer": "^5.2.1",
         "secure-random": "^1.1.2"
     },

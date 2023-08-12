@@ -3,4 +3,4 @@
 - Clean up imports
 - Use babel for tests
 ## v0.3.0
-- Extract websocket library to separate leedexjs-ws lib
+- Extract websocket library to separate kreeljs-ws lib

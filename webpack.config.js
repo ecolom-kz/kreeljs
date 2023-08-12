@@ -5,7 +5,7 @@ module.exports = {
     mode: "production",
     output: {
         path: path.resolve(__dirname, "build"),
-        filename: "leedexjs.cjs",
+        filename: "kreeljs.cjs",
         libraryTarget: "commonjs"
     },
     resolve:{

@@ -737,10 +737,10 @@
                         }
                       },
                       "extra": {
-                        "rawValue": "leedexjs-ws",
-                        "raw": "\"leedexjs-ws\""
+                        "rawValue": "kreeljs-ws",
+                        "raw": "\"kreeljs-ws\""
                       },
-                      "value": "leedexjs-ws"
+                      "value": "kreeljs-ws"
                     }
                   ]
                 }
@@ -2086,7 +2086,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "leedexjs-ws",
+      "value": "kreeljs-ws",
       "start": 343,
       "end": 359,
       "loc": {

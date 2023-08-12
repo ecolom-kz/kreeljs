@@ -1,7 +1,7 @@
 import {Aes, PrivateKey, PublicKey, Signature, hash, key} from "../../lib";
 import assert from "assert";
 import {Long} from "bytebuffer";
-import {ChainConfig} from "leedexjs-ws";
+import {ChainConfig} from "kreeljs-ws";
 
 import secureRandom from "secure-random";
 

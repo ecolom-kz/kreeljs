@@ -1,7 +1,7 @@
-import {Apis} from "leedexjs-ws";
+import {Apis} from "kreeljs-ws";
 import {ChainStore, FetchChain, PrivateKey, TransactionHelper, Aes, TransactionBuilder} from "../lib";
 
-var witness_node = "wss://node0.leedex.net:8980"
+var witness_node = "wss://kreel0.samsonov.net:8980"
 var nobroadcast = false
 var amount_to_send = 10000
 var asset_to_send = "TEST"

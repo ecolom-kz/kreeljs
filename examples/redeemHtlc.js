@@ -1,10 +1,10 @@
-import {Apis} from "leedexjs-ws";
+import {Apis} from "kreeljs-ws";
 import {TransactionBuilder, ChainStore, FetchChain, PrivateKey} from "../lib";
 
 const wifKey = "5JjjMBUHUecV8nHvgKXdjRi9oqD8h382qQrAEAdLQ4oYAoEeSv2";
 const pKey = PrivateKey.fromWif(wifKey);
 
-Apis.instance("wss://node0.leedex.net:8980", true).init_promise.then(
+Apis.instance("wss://kreel0.samsonov.net:8980", true).init_promise.then(
     res => {
         console.log("connected to:", res[0].network_name, "network");
 

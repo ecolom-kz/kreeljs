@@ -1,6 +1,6 @@
 import { Aes, PrivateKey, PublicKey, Address } from "../../lib";
 import assert from "assert";
-import {ChainConfig} from "leedexjs-ws";
+import {ChainConfig} from "kreeljs-ws";
 
 var test = function(key) {
     describe("KeyFormats", function() {
