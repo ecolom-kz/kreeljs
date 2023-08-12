@@ -1,4 +1,4 @@
-import {Apis} from "leedexjs-ws";
+import {Apis} from "kreeljs-ws";
 import {ChainStore, FetchChain, PrivateKey, TransactionHelper, Aes, TransactionBuilder} from "../lib";
 
 Apis.instance("wss://testnet.dex.trading", true)

@@ -6,8 +6,8 @@ import {
     ops,
     types
 } from "../../lib";
-// import { Apis } from 'leedexjs-ws';
-import {Apis, ChainConfig} from "leedexjs-ws";
+// import { Apis } from 'kreeljs-ws';
+import {Apis, ChainConfig} from "kreeljs-ws";
 import assert from "assert";
 
 describe("issue13", function() {
@@ -68,7 +68,7 @@ describe("issue13", function() {
             signatures: []
         };
         return Apis.instance(
-            "wss://node0.leedex.net:8980",
+            "wss://kreel0.samsonov.net:8980",
             true
         ).init_promise.then(() => {
             var b = ops.transaction.toBuffer(a);

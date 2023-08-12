@@ -1,6 +1,6 @@
 window.esdocSearchIndex = [
   [
-    "leedexjs/lib/chain/src/accountlogin.js~accountlogin",
+    "kreeljs/lib/chain/src/accountlogin.js~accountlogin",
     "class/lib/chain/src/AccountLogin.js~AccountLogin.html",
     "<span>AccountLogin</span> <span class=\"search-result-import-path\">bitsharesjs/lib/chain/src/AccountLogin.js</span>",
     "class"

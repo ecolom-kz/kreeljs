@@ -1,18 +1,18 @@
-# LEEDEXJS
+# KREELJS
 
-Pure JavaScript LEEDEX library for node.js and browsers. Can be used to construct, sign and broadcast transactions in JavaScript, and to easily obtain data from the blockchain via public apis.
+Pure JavaScript KREEL library for node.js and browsers. Can be used to construct, sign and broadcast transactions in JavaScript, and to easily obtain data from the blockchain via public apis.
 
 Most of this code was written by [jcalfee](https://github.com/jcalfee), my work was mostly just repackaging to a discrete npm package.
 
-[![npm version](https://img.shields.io/npm/v/leedexjs.svg?style=flat-square)](https://www.npmjs.com/package/leedexjs)
-[![npm downloads](https://img.shields.io/npm/dm/leedexjs.svg?style=flat-square)](https://www.npmjs.com/package/leedexjs)
+[![npm version](https://img.shields.io/npm/v/kreeljs.svg?style=flat-square)](https://www.npmjs.com/package/kreeljs)
+[![npm downloads](https://img.shields.io/npm/dm/kreeljs.svg?style=flat-square)](https://www.npmjs.com/package/kreeljs)
 
 ## Setup
 
 This library can be obtained through npm:
 
 ```
-npm install leedexjs
+npm install kreeljs
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ The auths object should contain the auth arrays from the account object. An exam
 ```
 {
     active: [
-        ["LD5Abm5dCdy3hJ1C5ckXkqUH2Me7dXqi9Y7yjn9ACaiSJ9h8r8mL", 1]
+        ["KRL5Abm5dCdy3hJ1C5ckXkqUH2Me7dXqi9Y7yjn9ACaiSJ9h8r8mL", 1]
     ]
 }
 ```
@@ -58,10 +58,10 @@ The Chain library contains a complete state container called the ChainStore. The
 The ChainStore has several useful methods to retrieve, among other things, objects, assets and accounts using either object ids or asset/account names. These methods are synchronous and will return `undefined` to indicate fetching in progress, and `null` to indicate that the object does not exist.
 
 ```
-import {Apis} from "leedexjs-ws";
-var {ChainStore} = require("leedexjs");
+import {Apis} from "kreeljs-ws";
+var {ChainStore} = require("kreeljs");
 
-Apis.instance("wss://node0.leedex.net:8980", true).init_promise.then((res) => {
+Apis.instance("wss://kreel0.samsonov.net:8980", true).init_promise.then((res) => {
     console.log("connected to:", res[0].network);
     ChainStore.init().then(() => {
         ChainStore.subscribe(updateState);
@@ -84,7 +84,7 @@ The ECC library contains all the crypto functions for private and public keys as
 As a quick example, here's how to generate a new private key from a seed (a brainkey for example):
 
 ```
-var {PrivateKey, key} = require("leedexjs");
+var {PrivateKey, key} = require("kreeljs");
 
 let seed = "THIS IS A TERRIBLE BRAINKEY SEED WORD SEQUENCE";
 let pkey = PrivateKey.fromSeed( key.normalize_brainKey(seed) );
@@ -107,10 +107,10 @@ open out/esdoc/index.html
 
 ## Binaries / Browserified bundles
 
-Please have a [look here](https://github.com/leedex-chain/leedexjs/releases) to find your desired release.
+Please have a [look here](https://github.com/kreel-chain/kreeljs/releases) to find your desired release.
 If you want to build the binaries yourself you can clone this repository and run `npm install`. It will
 create
 
--   Browserified version `build/leedexjs.js`
--   Browserified and minified (babel) version `build/leedexjs.min.js`
--   CommonJS version using webpack `build/leedexjs.cjs`
+-   Browserified version `build/kreeljs.js`
+-   Browserified and minified (babel) version `build/kreeljs.min.js`
+-   CommonJS version using webpack `build/kreeljs.cjs`
