@@ -38,7 +38,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/kreel-chain/kreeljs.git"
+        "url": "git+https://github.com/maxirmx/kreeljs.git"
     },
     "author": "maxirmx <maxirmx@gmail.com>",
     "contributors": [
@@ -46,7 +46,7 @@
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/kreel-chain/kreeljs/issues"
+        "url": "https://github.com/maxirmx/kreeljs/issues"
     },
     "engines": {
         "node": ">= 16.13.0"
